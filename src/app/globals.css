@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #060b16;
+  --color-brand-navy: #0a1a2e;
+  --color-brand-blue: #00538b;
+  --color-brand-cyan: #0090cc;
+  --color-brand-light: #f4f7fa;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@utility clip-chevron-left {
+  clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);
+}
+
+@utility clip-chevron-right {
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+}
+
+@utility bg-grid-lines {
+  background-image: linear-gradient(rgba(0, 144, 204, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 144, 204, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(48px, -36px, 0) scale(1.15);
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 144, 204, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 28px rgba(0, 144, 204, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 144, 204, 0);
+  }
+}
+
+.animate-drift {
+  animation: drift 18s ease-in-out infinite;
+}
+
+.animate-drift-slow {
+  animation: drift 26s ease-in-out infinite reverse;
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 16s ease-out forwards;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-brand-dark);
+  color: #ffffff;
+}
