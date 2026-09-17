@@ -29,20 +29,19 @@ export const useInquiryStore = create<InquiryState>()((set, get) => ({
   submit: async () => {
     set({ status: "submitting", error: undefined });
     try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(get().form),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        throw new Error(data.error ?? "Failed to submit inquiry");
-      }
+      const { fullName, email, phone, serviceCategory, message } = get().form;
+      const subject = encodeURIComponent(
+        `Inquiry from ${fullName} - ${serviceCategory}`
+      );
+      const body = encodeURIComponent(
+        `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nService Category: ${serviceCategory}\n\nMessage:\n${message}`
+      );
+      window.location.href = `mailto:info@markstoneksa.com?subject=${subject}&body=${body}`;
       set({ status: "success", form: initialForm });
-    } catch (err) {
+    } catch {
       set({
         status: "error",
-        error: err instanceof Error ? err.message : "Something went wrong",
+        error: "Failed to open email client",
       });
     }
   },

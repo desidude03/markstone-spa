@@ -102,7 +102,7 @@ export default function ContactForm() {
           animate={{ opacity: 1, y: 0 }}
           className="mt-4 text-sm text-brand-cyan"
         >
-          Thank you! Your inquiry has been submitted successfully.
+          Your email client has been opened. Please send the message to complete your inquiry.
         </motion.p>
       )}
       {status === "error" && (
@@ -114,7 +114,7 @@ export default function ContactForm() {
         disabled={status === "submitting"}
         className="mt-6 w-full bg-gradient-to-r from-brand-blue to-brand-cyan text-white font-bold uppercase tracking-wider py-3 rounded transition-opacity hover:opacity-90 disabled:opacity-50"
       >
-        {status === "submitting" ? "Submitting..." : "Submit Inquiry"}
+        {status === "submitting" ? "Opening Email..." : "Send Email"}
       </button>
     </motion.form>
   );
