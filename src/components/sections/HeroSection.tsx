@@ -1,10 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import ChevronImage from "@/components/ui/ChevronImage";
 import Counter from "@/components/ui/Counter";
 import { EASE } from "@/components/ui/Reveal";
 import type { CompanyOverview } from "@/types";
+
+const ThreeBackground = dynamic(
+  () => import("@/components/ui/ThreeBackground"),
+  { ssr: false, loading: () => null },
+);
 
 interface HeroSectionProps {
   overview: CompanyOverview;
@@ -21,6 +27,7 @@ export default function HeroSection({ overview }: HeroSectionProps) {
       <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-brand-blue/20 blur-3xl animate-drift" />
       <div className="absolute -bottom-40 -right-24 w-[520px] h-[520px] rounded-full bg-brand-cyan/10 blur-3xl animate-drift-slow" />
       <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-brand-blue/25 blur-2xl animate-drift" />
+      <ThreeBackground />
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <motion.div
@@ -48,7 +55,7 @@ export default function HeroSection({ overview }: HeroSectionProps) {
           className="h-[300px] md:h-[350px] w-full"
         >
           <ChevronImage
-            src="/images/hero-ship.png"
+            src="/images/Hero.png"
             alt="Trading & Maritime Logistics"
             direction="left"
             className="w-full h-full"

@@ -25,8 +25,8 @@ export default function MissionVisionSection({
         className="h-[320px] w-full order-2 md:order-1"
       >
         <ChevronImage
-          src="/images/warehouse-forklift.png"
-          alt="Warehouse Operations"
+          src="/images/Manpower.png"
+          alt="Manpower Solutions"
           direction="left"
           className="w-full h-full"
         />

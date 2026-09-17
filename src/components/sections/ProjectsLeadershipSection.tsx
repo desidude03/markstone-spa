@@ -73,8 +73,8 @@ export default function ProjectsLeadershipSection({
         className="h-[350px] w-full"
       >
         <ChevronImage
-          src="/images/port-crane.png"
-          alt="Port Operations"
+          src="/images/leadership.png"
+          alt="Leadership Team"
           direction="right"
           className="w-full h-full"
         />
