@@ -40,8 +40,8 @@ export default function OverviewSection({ overview }: OverviewSectionProps) {
         className="h-[320px] w-full"
       >
         <ChevronImage
-          src="/images/logistics-truck.png"
-          alt="Logistics Transport"
+          src="/images/overview.png"
+          alt="Company Overview"
           direction="right"
           className="w-full h-full"
         />
