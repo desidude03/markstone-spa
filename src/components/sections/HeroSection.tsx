@@ -55,7 +55,7 @@ export default function HeroSection({ overview }: HeroSectionProps) {
           className="h-[300px] md:h-[350px] w-full"
         >
           <ChevronImage
-            src="/images/Hero.png"
+            src="/images/Hero_banner.png"
             alt="Trading & Maritime Logistics"
             direction="left"
             className="w-full h-full"
