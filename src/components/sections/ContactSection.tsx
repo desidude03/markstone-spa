@@ -20,12 +20,12 @@ export default function ContactSection({ overview }: ContactSectionProps) {
         </Reveal>
 
         <Reveal>
-          <div className="w-full max-w-lg mb-8 bg-brand-dark/50 border border-brand-cyan/20 rounded-lg p-6 text-left">
-            <h3 className="text-xl font-bold text-brand-cyan uppercase mb-4">
+          <div className="w-full max-w-2xl mb-8 text-left">
+            <h3 className="text-xl font-bold text-brand-cyan uppercase mb-4 text-center">
               Contact Person
             </h3>
-            <div className="space-y-5">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-brand-dark/50 border border-brand-cyan/20 rounded-lg p-6">
                 <p className="text-white font-semibold text-lg">Aboobakar Shakeel</p>
                 <p className="text-gray-400 text-sm mb-2">Managing Director</p>
                 <div className="flex flex-col gap-1.5">
@@ -43,7 +43,7 @@ export default function ContactSection({ overview }: ContactSectionProps) {
                   </a>
                 </div>
               </div>
-              <div className="border-t border-brand-blue/30 pt-4">
+              <div className="bg-brand-dark/50 border border-brand-cyan/20 rounded-lg p-6">
                 <p className="text-white font-semibold text-lg">Badruddin</p>
                 <p className="text-gray-400 text-sm mb-2">Operations</p>
                 <div className="flex flex-col gap-1.5">
