@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Markstone Trading Service | Company Profile",
   description:
     "Markstone Trading Service — reliable solutions in trading, logistics, and manpower services. Al Umran, Kingdom of Saudi Arabia.",
+  icons: { icon: "/images/logo.png" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
