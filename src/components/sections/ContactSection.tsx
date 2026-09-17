@@ -21,24 +21,46 @@ export default function ContactSection({ overview }: ContactSectionProps) {
 
         <Reveal>
           <div className="w-full max-w-lg mb-8 bg-brand-dark/50 border border-brand-cyan/20 rounded-lg p-6 text-left">
-            <h3 className="text-xl font-bold text-brand-cyan uppercase mb-3">
+            <h3 className="text-xl font-bold text-brand-cyan uppercase mb-4">
               Contact Person
             </h3>
-            <p className="text-white font-semibold text-lg">Shakeel</p>
-            <p className="text-gray-400 text-sm mb-4">Managing Director</p>
-            <div className="flex flex-col gap-2">
-              <a
-                href="tel:+966562929365"
-                className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
-              >
-                +966 56 292 9365
-              </a>
-              <a
-                href="tel:+966570215834"
-                className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
-              >
-                +966 57 021 5834
-              </a>
+            <div className="space-y-5">
+              <div>
+                <p className="text-white font-semibold text-lg">Aboobakar Shakeel</p>
+                <p className="text-gray-400 text-sm mb-2">Managing Director</p>
+                <div className="flex flex-col gap-1.5">
+                  <a
+                    href="tel:+966562929365"
+                    className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
+                  >
+                    +966 56 292 9365
+                  </a>
+                  <a
+                    href="mailto:shakeel@markstoneksa.com"
+                    className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
+                  >
+                    shakeel@markstoneksa.com
+                  </a>
+                </div>
+              </div>
+              <div className="border-t border-brand-blue/30 pt-4">
+                <p className="text-white font-semibold text-lg">Badruddin</p>
+                <p className="text-gray-400 text-sm mb-2">Operations</p>
+                <div className="flex flex-col gap-1.5">
+                  <a
+                    href="tel:+966570215834"
+                    className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
+                  >
+                    +966 57 021 5834
+                  </a>
+                  <a
+                    href="mailto:badru@markstoneksa.com"
+                    className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
+                  >
+                    badru@markstoneksa.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </Reveal>

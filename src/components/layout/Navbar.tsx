@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { useUiStore } from "@/store/uiStore";
@@ -37,13 +38,15 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-brand-dark/90 backdrop-blur border-b border-brand-blue/30">
       <nav className="max-w-7xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
-        <Link href="#hero" className="flex flex-col leading-none group">
-          <span className="text-lg font-extrabold tracking-wider text-white transition-colors group-hover:text-brand-cyan">
-            {siteConfig.shortName}
-          </span>
-          <span className="text-[11px] font-semibold tracking-[0.3em] text-brand-cyan uppercase">
-            {siteConfig.tagline}
-          </span>
+        <Link href="#hero" className="flex-shrink-0">
+          <Image
+            src="/images/logo_transparent.jpeg"
+            alt={siteConfig.shortName}
+            width={0}
+            height={0}
+            priority
+            className="h-12 w-auto"
+          />
         </Link>
 
         <button

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 
 export default function Footer() {
@@ -5,12 +6,13 @@ export default function Footer() {
     <footer className="bg-brand-navy/60 border-t border-brand-blue/30 px-6 md:px-8 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         <div>
-          <div className="text-xl font-extrabold tracking-wider text-white">
-            {siteConfig.shortName}
-          </div>
-          <div className="text-xs font-semibold tracking-[0.3em] text-brand-cyan uppercase mt-1">
-            {siteConfig.tagline}
-          </div>
+          <Image
+            src="/images/logo_transparent.jpeg"
+            alt={siteConfig.shortName}
+            width={0}
+            height={0}
+            className="h-10 w-auto"
+          />
         </div>
 
         <ul className="grid grid-cols-2 gap-2">
