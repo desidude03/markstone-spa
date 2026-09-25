@@ -26,14 +26,14 @@ export default function ContactSection({ overview }: ContactSectionProps) {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-brand-dark/50 border border-brand-cyan/20 rounded-lg p-6">
-                <p className="text-white font-semibold text-lg">Aboobakar Shakeel</p>
+                <p className="text-white font-semibold text-lg">Aboobaker Shakeel</p>
                 <p className="text-gray-400 text-sm mb-2">Managing Director</p>
                 <div className="flex flex-col gap-1.5">
                   <a
-                    href="tel:+96656158294"
+                    href="tel:+966561582794"
                     className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
                   >
-                    +966 56 158 294
+                    +966 56 158 2794
                   </a>
                   <a
                     href="mailto:shakeel@markstoneksa.com"
