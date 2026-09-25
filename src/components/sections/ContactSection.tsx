@@ -30,10 +30,10 @@ export default function ContactSection({ overview }: ContactSectionProps) {
                 <p className="text-gray-400 text-sm mb-2">Managing Director</p>
                 <div className="flex flex-col gap-1.5">
                   <a
-                    href="tel:+966562929365"
+                    href="tel:+96656158294"
                     className="text-gray-300 hover:text-brand-cyan transition-colors text-sm"
                   >
-                    +966 56 292 9365
+                    +966 56 158 294
                   </a>
                   <a
                     href="mailto:shakeel@markstoneksa.com"

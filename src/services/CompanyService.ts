@@ -35,10 +35,10 @@ export class CompanyService {
     return fetchApi("/overview", {
       name: "Markstone Trading Service",
       tagline: "Company Profile",
-      established: 2026,
-      location: "Al Umran, Kingdom of Saudi Arabia",
+      established: 2025,
+      location: "Dammam, Kingdom of Saudi Arabia",
       description:
-        "Markstone Trading Service is a forward-looking company delivering reliable solutions in trading, logistics, and manpower services. Established in 2026, we are committed to quality, integrity, and long-term partnerships that create value.",
+        "Markstone Trading Service is a forward-looking company delivering reliable solutions in trading, logistics, and manpower services. Established in 2025, we are committed to quality, integrity, and long-term partnerships that create value.",
     });
   }
 

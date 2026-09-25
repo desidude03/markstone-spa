@@ -3,8 +3,8 @@ export const siteConfig = {
   shortName: "MARKSTONE",
   tagline: "TRADING SERVICE",
   subtitle: "COMPANY PROFILE",
-  location: "Al Umran, Kingdom of Saudi Arabia",
-  established: 2026,
+  location: "Dammam, Kingdom of Saudi Arabia",
+  established: 2025,
   nav: [
     { href: "#hero", label: "Home" },
     { href: "#overview", label: "Overview" },
